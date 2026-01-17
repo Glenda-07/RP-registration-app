@@ -6,8 +6,15 @@ export default function Session() {
   // const catId = "3d-printing-and-design";
   // const sessionId = "3d-printing-metal";
 
-  const { catId, sessionId } = useParams();
-  const { name, desc, speaker } = getSession({ catId, sessionId });
+  const { moduleId, sessionId } = useParams();
+
+  const session = getSession({ moduleId, sessionId });
+
+  if (!session) {
+    return <p>Select a session</p>;
+  }
+
+  const { name, desc, speaker } = session;
 
   return (
     <>

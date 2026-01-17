@@ -79,14 +79,14 @@ nav a:hover,
   color: #5dabaa;
 }
 
-.categories a {
+.diploma a {
   font-weight: 500;
   color: #605e5e;
   text-decoration: none;
   padding: 0.25em 0.4em;
 }
-.categories a:hover, 
-a.category-active {
+.diploma a:hover, 
+a.diploma-active {
   color: #fff;
   background-color: #605e5e;
   border-radius: 3px;
@@ -117,7 +117,7 @@ a.session-active {
   margin-bottom: 2em;
 }
 
-.categories {
+.diploma {
   margin-top: 2.5em;
   margin-bottom: 1.5em;
 }
