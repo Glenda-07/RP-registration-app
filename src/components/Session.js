@@ -7,8 +7,8 @@ export default function Session() {
   // const sessionId = "3d-printing-metal";
 
   const { moduleId, sessionId } = useParams();
+  const session = getSession({ diplomaId: moduleId, sessionId });
 
-  const session = getSession({ moduleId, sessionId });
 
   if (!session) {
     return <p>Select a session</p>;
@@ -23,9 +23,8 @@ export default function Session() {
 
       <h4>{speaker.name}</h4>
       <span>
-        {speaker.title} at {speaker.org}
+        {speaker.title} 
       </span>
-      <p>{speaker.bio}</p>
     </>
   );
 }
