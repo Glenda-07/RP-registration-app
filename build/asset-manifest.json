@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f93c262.css",
+    "main.js": "/static/js/main.014a038f.js",
+    "static/media/vitaly-gariev--X4Qx4_4iMU-unsplash.jpg": "/static/media/vitaly-gariev--X4Qx4_4iMU-unsplash.282d050b95a38f320a8d.jpg",
+    "static/media/idnGT3CexF_1768646526257.png": "/static/media/idnGT3CexF_1768646526257.efac9bd5c2724d917183.png",
+    "index.html": "/index.html",
+    "main.9f93c262.css.map": "/static/css/main.9f93c262.css.map",
+    "main.014a038f.js.map": "/static/js/main.014a038f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f93c262.css",
+    "static/js/main.014a038f.js"
+  ]
+}

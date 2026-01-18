@@ -2,7 +2,9 @@ import { useParams, NavLink, Outlet } from "react-router-dom";
 import { getModules } from "../api";
 
 export default function Modules() {
+
   const { moduleId } = useParams(); 
+  
 const sessions = getModules(moduleId);
 
 if (!sessions.length) return <p>Select a diploma to see modules.</p>;
