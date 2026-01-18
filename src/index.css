@@ -54,10 +54,14 @@ ul li {
   margin-bottom: 1em;
 }
 
+.middle {
+  text-align: center;
+} 
+
 /* nav & links */
 
 a {
-  color: #e7212b;
+  color: #1fb412;
 }
 
 a:hover {
@@ -67,7 +71,7 @@ a:hover {
 nav a {
   display: block;
   font-size: 1.25rem;
-  color: #DD1F26;
+  color: #000000;
   padding-bottom: 0.15em;
   border-bottom: 2px solid transparent;
   font-weight: 500;
@@ -76,19 +80,22 @@ nav a {
 
 nav a:hover, 
 .nav-active {
-  color: #5dabaa;
+  color: #1fb412;
 }
 
 .diploma a {
   font-weight: 500;
-  color: #605e5e;
+  color: #1fb412;
   text-decoration: none;
   padding: 0.25em 0.4em;
 }
 .diploma a:hover, 
 a.diploma-active {
-  color: #fff;
-  background-color: #605e5e;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #1fb412;
+  border-style: solid;
+  border-width: 5%;
   border-radius: 3px;
 }
 
@@ -103,7 +110,7 @@ a.diploma-active {
 
 .session a:hover, 
 a.session-active {
-  color: #489b9a;
+  color: #3c8ed5;
 }
 
 /* components & assets */
@@ -161,7 +168,7 @@ input {
 }
 
 input:focus {
-  outline-color: #5dabaa;
+  outline-color: #3c8ed5;
 }
 
 input[type="submit"] {
@@ -169,11 +176,11 @@ input[type="submit"] {
   color: #fff;
   font-weight: bold;
   padding: 0.65em 0;
-  background-color: #75bebd;
+  background-color: #1fb412;
   border: none;
 }
 input[type="submit"]:hover {
-  background-color: #5dabaa;
+  background-color: #3c8ed5;
 }
 
 /* layout */
