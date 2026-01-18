@@ -7,7 +7,7 @@ export default function Schools() {
   return (
     <div className="container">
       <h1>Schools</h1>
-      <ul>
+      <ul className="diploma">
         {schools?.map(school => (
           <li key={school.id}>
             <NavLink to={school.id}>{school.name}</NavLink>
