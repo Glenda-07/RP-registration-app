@@ -1,18 +1,33 @@
 import { Outlet, NavLink,useParams} from "react-router-dom"; 
-import { getDiploma , getDiplomas} from "../api";
+import { getDiplomas} from "../api";
+import { useState } from "react";
 
 export default function Diploma() {
   const { schoolId } = useParams();
   const diplomas = getDiplomas(schoolId); 
+  const [query, setQuery] = useState("");
+
+  const filteredDiplomas = diplomas.filter(d =>
+  d.name.toLowerCase().includes(query.toLowerCase())
+  );
+
 
    if (!diplomas) return <p>No diplomas found.</p>;
 
   return (
     <div className="container">
+
       <h1>{schoolId} Diploma</h1>
+      <br></br> 
+      <input
+      type="text"
+      placeholder="Search for diplomas..."
+      value={query}
+      onChange={(e) => setQuery(e.target.value)}
+      />
 
       <ul className="diploma">
-        {diplomas?.map(diploma => (   
+        {filteredDiplomas?.map(diploma => (   
           <li key={diploma.id}>
             <NavLink 
               to={diploma.id}          
